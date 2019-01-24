@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>图书</title>
+</head>
+<body>
+<table border="1px">
+    <thead>
+        <td>书名</td>
+        <td>作者</td>
+        <td>章节</td>
+    </thead>
+    <tbody>
+        <tr th:each="book,BookVo:${books}">
+            <td th:text="${book.name}"></td>
+            <td th:text="${book.author}"></td>
+            <td th:text="${book.chapter}"></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

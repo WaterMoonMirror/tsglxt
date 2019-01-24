@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>添加图书</title>
+</head>
+<body>
+<form action="/book/add" method="post">
+    书名：<input th:name="name"><br/>
+    作者：<input th:name="author"><br/>
+    章节：<input th:name="chapter"><br/>
+    <button type="submit" >添加</button>
+</form>
+</body>
+</html>
